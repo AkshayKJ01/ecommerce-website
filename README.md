@@ -1,3 +1,3 @@
 # E-Commerce Website
 
-This repository contains the code for a e-commerce website
+This repository contains the code for an E-commerce website
