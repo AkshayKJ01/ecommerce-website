@@ -6,9 +6,9 @@ import User from '../models/userModel.js';
 const seedRouter = express.Router();
 
 seedRouter.get('/', async (req, res) => {
-  await Product.remove({});
+  await Product.deleteMany({}); //used deleteMany instead of remove
   const createdProducts = await Product.insertMany(data.products);
-  await User.remove({});
+  await User.deleteMany({});
   const createdUsers = await User.insertMany(data.users);
   res.send({ createdProducts, createdUsers });
 });
